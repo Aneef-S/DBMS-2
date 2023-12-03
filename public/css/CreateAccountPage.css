@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #363062; /* Light gray background656565 */
+    font-family:monospace;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .login-container {
+    background-color: #435585; /* White container background */
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 320px;
+  }
+  
+  .login-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333; /* Dark gray text color */
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #007bff; /* Blue text color */
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #cccccc; /* Light gray border */
+    color: #333333; /* Dark gray text color */
+    background-color: #f5f5f5; /* Lighter gray input background */
+  }
+  
+  .login-form input[type="submit"],
+  .create-account-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-family:monospace;
+    font-weight: 100;
+    border: none;
+    background-color: #007bff; /* Blue button background */
+    color: #ffffff; /* White button text color */
+    cursor: pointer;
+  }
+  
+  .login-form input[type="submit"]{
+
+    background-color: #212541;
+  }
+
+  .login-form input[type="submit"]:hover{
+
+    background-color: #161A30;
+  }
+
+  .create-account-btn {
+    background-color: #212541; /* Green button background */
+    margin-top: 10px;
+  }
+  
+  .create-account-btn:hover {
+    background-color: #161A30; /* Darker green on hover */
+  }
+
+  
+
+  
+  /* Animation for rainbow text color cycle */
+/* Animation for limited color cycle */
+@keyframes limitedRainbow {
+    0% { color: #363062; }
+    50% { color: #F0ECE5; }
+    100% { color: #B6BBC4; }
+  }
+  
+  .login-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: limitedRainbow 15s infinite; /* Animation for text color */
+  }
+
+  
+  /* Other styles for login box remain the same */
+    
+  
