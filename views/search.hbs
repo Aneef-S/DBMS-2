@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Address Form</title>
+  <link rel="stylesheet" href="css/search.css">
+
+</head>
+<body>
+
+
+    <div class="navbar">
+<ul class="items">
+
+  <li ><a href="\home">HOME</a></li>
+  <li><a href="\search">BOOK YOUR RIDE</a></li>
+  <li><a href="\profile">PROFILE</a></li>
+  <li><a href="/">LOGOUT</a></li>
+
+  
+</ul>
+</div>
+
+  <h1>BOOK YOUR TICKET</h1>
+
+  <form action="/search" method="post" id="addressForm">
+    <label for="fromAddress">FROM:</label>
+    <select name="fadrs" id="fromAddress">
+        {{#each locations}}
+      <option >{{location}}</option>
+     {{/each}}
+      <!-- Add more options as needed -->
+    </select>
+    <br><br>
+
+    <label for="toAddress">TO:</label>
+    <select name="tadrs" id="toAddress">
+       {{#each locations}}
+      <option >{{location}}</option>
+     {{/each}}
+      <!-- Add more options as needed -->
+    </select>
+    <br><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+    <br><br>
+
+    <button type="submit" id="searchButton">SEARCH</button>
+    <button type="button" id="cancelButton">CANCEL</button>
+  </form>
+{{#if buses}}
+<table class="book">
+    <tr>
+        <th>BUS-ID</th>
+        <th>TOTAL SEATS</th>
+        <th>AVAILABLE SEATS</th>
+        <th > <form action="/book" method="post"> <button  id="bookButton"> BOOK</button> </form></th>
+    </tr>
+    {{#each buses}}
+    <tr>
+        <td>{{bus_id}}</td>
+        <td>{{total_seats}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{/if}}
+  <script>
+  
+  </script>
+
+</body>
+</html>
